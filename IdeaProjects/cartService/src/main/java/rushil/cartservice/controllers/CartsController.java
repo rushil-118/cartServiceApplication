@@ -25,7 +25,7 @@ public class CartsController {
         return cartService.getSingleCart(ID);
     }
 
-    @GetMapping("/carts")
+    @GetMapping("/carts/")
     public List<Cart> getinDateRange(@RequestParam("startdate=") String Date1,
                                       @RequestParam("enddate=") String Date2){
         return cartService.getinDateRange(Date1,Date2);
